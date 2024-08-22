@@ -22,6 +22,8 @@
               clifford: '#da373d',
               hoverColor: '#494949',
               btnPrimary: '#ABEF5F',
+              headerColor: '#212121',
+              descriptionColor: '#494949'
             },
             fontFamily: {
                 manrope: ["Manrope", "sans-serif"],
@@ -60,9 +62,10 @@
                 <i class="fa-solid fa-magnifying-glass text-2xl bg-white border text-gray-500 px-3 py-2 rounded-full cursor-pointer"></i>
               <i class="fa-solid fa-cart-shopping text-2xl bg-white border text-gray-500 px-3 py-2 rounded-full cursor-pointer"></i>
               </div>
-            <div class="space-x-3 bg-btnPrimary px-5 py-3 rounded-[32px] hidden md:block lg:block">
-              <button class="text-xl font-extrabold">Book Consult</button>
-            <i class="fa-solid fa-arrow-right-long text-2xl -rotate-45 bg-gray-900 text-white px-2 py-1 rounded-full cursor-pointer"></i>
+            <div class="hidden md:block lg:block">
+                <button class="text-xl font-extrabold space-x-3 bg-btnPrimary px-5 py-3 rounded-[32px]">Book Consult
+                  <i class="fa-solid fa-arrow-right-long text-2xl -rotate-45 bg-gray-900 text-white px-2 py-1 rounded-full cursor-pointer ml-2"></i>
+                </button>
             </div>
 
             <div class="dropdown">
@@ -82,8 +85,21 @@
           </div>
       </nav>
       <!-- Banner section Start Here -->
-       <section>
-
+       <section class="mb-16 lg:mb-24">
+          <div class="flex flex-col text-center items-center space-y-6 px-6">
+            <div>
+              <img src="./assets/banner.png" alt="">
+            </div>
+            <div class="lg:px-36 space-y-6">
+              <h1 class="text-4xl lg:text-6xl font-extrabold text-headerColor leading-tight">A barn house of this design has a striking appearance</h1>
+            <p class="font-medium text-descriptionColor leading-normal">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+            <div>
+              <button class="text-xl font-extrabold space-x-3 bg-btnPrimary bg-opacity-70 px-5 py-3 rounded-[32px]">Book Consult
+                <i class="fa-solid fa-arrow-right-long text-2xl -rotate-45 bg-btnPrimary text-gray-950 px-2 py-1 rounded-full cursor-pointer ml-2"></i>
+              </button>
+            </div>
+            </div>
+          </div>
        </section>
      </header>
 
