@@ -20,6 +20,8 @@
           extend: {
             colors: {
               clifford: '#da373d',
+              hoverColor: '#494949',
+              btnPrimary: '#ABEF5F',
             },
             fontFamily: {
                 manrope: ["Manrope", "sans-serif"],
@@ -30,6 +32,64 @@
     </script>
 </head>
 <body class="font-manrope">
-    <h2>Tailwind.</h2>
+    <!-- Header Part Start -->
+     <header class="container mx-auto">
+      <!-- Navbar section Start Here -->
+      <nav class="navbar bg-base-100 py-12 flex justify-between">
+        <div>
+          <div class="flex gap-x-3 items-center justify-center">
+            <div class="bg-btnPrimary px-2 py-1 rounded-full">
+              <i class="fa-solid fa-arrow-right-long text-2xl -rotate-45 cursor-pointer"></i>
+            </div>
+            <div>
+              <a href="#" class="text-3xl font-extrabold">Rinterio</a>
+            </div>
+          </div>
+        </div>
+          <div class="hidden lg:flex">
+            <ul class="flex gap-x-4 px-1  text-base font-normal text-gray-500 ">
+              <li class="font-extrabold text-hoverColor"><a href="#">Home</a><li>
+              <li><a href="#">Services</a><li>
+              <li><a href="#">Portfolio</a><li>
+              <li><a href="#">Blogs</a><li>
+              <li><a href="#">Contact Us</a><li>
+            </ul>
+          </div>
+          <div class="space-x-3">
+              <div class="space-x-3 hidden md:block lg:block">
+                <i class="fa-solid fa-magnifying-glass text-2xl bg-white border text-gray-500 px-3 py-2 rounded-full cursor-pointer"></i>
+              <i class="fa-solid fa-cart-shopping text-2xl bg-white border text-gray-500 px-3 py-2 rounded-full cursor-pointer"></i>
+              </div>
+            <div class="space-x-3 bg-btnPrimary px-5 py-3 rounded-[32px] hidden md:block lg:block">
+              <button class="text-xl font-extrabold">Book Consult</button>
+            <i class="fa-solid fa-arrow-right-long text-2xl -rotate-45 bg-gray-900 text-white px-2 py-1 rounded-full cursor-pointer"></i>
+            </div>
+
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ">
+                  <i class="fa-solid fa-bars text-3xl"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-8">
+                  <li class="font-extrabold text-hoverColor"><a href="#">Home</a><li>
+                  <li><a href="#">Services</a><li>
+                  <li><a href="#">Portfolio</a><li>
+                  <li><a href="#">Blogs</a><li>
+                  <li><a href="#">Contact Us</a><li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+      <!-- Banner section Start Here -->
+       <section>
+
+       </section>
+     </header>
+
+     <!-- Main Part Start -->
+      <main></main>
+      <!-- Footer Part Start -->
+       <footer></footer>
 </body>
 </html>
