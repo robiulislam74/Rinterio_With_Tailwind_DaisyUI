@@ -23,7 +23,9 @@
               hoverColor: '#494949',
               btnPrimary: '#ABEF5F',
               headerColor: '#212121',
-              descriptionColor: '#494949'
+              descriptionColor: '#494949',
+              cardDescriptionColor: '737373',
+              bodyBgColor: '#f4f4f4',
             },
             fontFamily: {
                 manrope: ["Manrope", "sans-serif"],
@@ -36,7 +38,7 @@
 <body class="font-manrope">
     <!-- Header Part Start -->
      <header class="container mx-auto">
-      <!-- Navbar section Start Here -->
+      <!-- Navbar Part Start Here -->
       <nav class="navbar bg-base-100 py-12 flex justify-between">
         <div>
           <div class="flex gap-x-3 items-center justify-center">
@@ -84,14 +86,14 @@
             </div>
           </div>
       </nav>
-      <!-- Banner section Start Here -->
+      <!-- Banner Part Start Here -->
        <section class="mb-16 lg:mb-24">
-          <div class="flex flex-col text-center items-center space-y-6 px-6">
+          <div class="flex flex-col text-center items-center space-y-6 px-6 lg:px-0">
             <div>
               <img src="./assets/banner.png" alt="">
             </div>
             <div class="lg:px-36 space-y-6">
-              <h1 class="text-4xl lg:text-6xl font-extrabold text-headerColor leading-tight">A barn house of this design has a striking appearance</h1>
+              <h1 class="text-4xl lg:text-6xl font-extrabold text-headerColor">A barn house of this design has a striking appearance</h1>
             <p class="font-medium text-descriptionColor leading-normal">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
             <div>
               <button class="text-xl font-extrabold space-x-3 bg-btnPrimary bg-opacity-70 px-5 py-3 rounded-[32px]">Book Consult
@@ -104,7 +106,50 @@
      </header>
 
      <!-- Main Part Start -->
-      <main></main>
+      <main class="bg-bodyBgColor h-[1000px] px-6 lg:px-0">
+        <!-- About Part Start Here -->
+        <section class="container mx-auto py-20 lg:py-28 grid grid-cols-1 lg:grid-cols-2 gap-12 relative text-center lg:text-left">
+            <!-- Content part here -->
+             <div class="space-y-7 flex-1 ">
+              <div>
+                <button class="bg-white py-2 px-4 rounded-3xl font-bold text-hoverColor shadow-sm"><i class="fa-solid fa-arrow-right-long text-lg"></i> About Us</button>
+              </div>
+              <div class="space-y-7 w-full lg:w-10/12">
+                <h2 class="text-[28px] lg:text-4xl font-extrabold text-headerColor">We design thoughtful, liveable spaces</h2>
+                <p class="font-medium text-descriptionColor">
+                  The barn house captivates with its blend of rustic charm and 
+                  modern sophistication, featuring weathered wood, sleek metal accents.
+                </p>
+              </div>
+              <!-- Card number 01 -->
+              <div class="bg-white rounded-2xl p-6 flex gap-6 shadow-sm lg:items-center text-left">
+                <div>
+                  <img src="./assets/commercial.png" alt="">
+                </div>
+                <div class="w-11/12 lg:w-7/12">
+                   <h3 class="text-xl font-bold text-hoverColor mb-3">Commercial</h3>
+                   <p class="font-medium text-gray-500">The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+             </div>
+              <!-- Card number 02 -->
+               <div class="bg-white rounded-2xl p-6 flex gap-6 shadow-sm lg:items-center text-left">
+                  <div>
+                    <img src="./assets/residential.png" alt="">
+                  </div>
+                  <div class="w-11/12 lg:w-7/12">
+                     <h3 class="text-xl font-bold text-hoverColor mb-3">Commercial</h3>
+                     <p class="font-medium text-gray-500">The barn house captivates with its blend of rustic charm and modern.</p>
+                  </div>
+               </div>
+             </div>
+             <!-- Image Part Here -->
+              <div class="flex-1">
+                <img src="./assets/Rectangle.png" alt="">
+              </div>
+              <img class="absolute top-12 -left-14 hidden lg:block" src="./assets/Vector.png" alt="">
+        </section>
+
+      </main>
       <!-- Footer Part Start -->
        <footer></footer>
 </body>
