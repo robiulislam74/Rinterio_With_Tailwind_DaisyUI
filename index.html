@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio_with_tailwind_DaisyUI</title>
+    <link rel="stylesheet" href="style.css">
     <!-- Tailwind and DaisyUI CDN Link -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -26,9 +27,17 @@
               descriptionColor: '#494949',
               cardDescriptionColor: '737373',
               bodyBgColor: '#f4f4f4',
+              workCard1: '#E7C1D3',
+              workCard2: '#EFDA6E',
+              workCard3: '#A4DAC3',
+              workCard4: '#77AAEA',
+              cardHeaderColor: '#1C1C1C',
             },
             fontFamily: {
                 manrope: ["Manrope", "sans-serif"],
+            },
+            backgroundImage: {
+              rectangleBg: "url('./assets/Rectangle.png')",
             }
           }
         }
@@ -106,23 +115,25 @@
      </header>
 
      <!-- Main Part Start -->
-      <main class="bg-bodyBgColor px-6 lg:px-0">
+      <main class="bg-bodyBgColor px-6 lg:px-6">
         <!-- About Part Start Here -->
-        <section class="container mx-auto py-20 lg:py-28 grid grid-cols-1 lg:grid-cols-2 gap-12 relative text-center lg:text-left">
+        <section class="container mx-auto py-20 lg:py-28 grid grid-cols-1 lg:grid-cols-2 gap-12 relative text-center lg:text-left items-center">
             <!-- Content part here -->
-             <div class="space-y-7 flex-1 ">
+             <div class="space-y-6 flex-1">
               <div>
-                <button class="bg-white py-2 px-4 rounded-3xl font-bold text-hoverColor shadow-sm"><i class="fa-solid fa-arrow-right-long text-lg"></i> About Us</button>
+                <button class="bg-white py-2 px-4 rounded-3xl font-bold text-hoverColor shadow-sm"><i class="fa-solid fa-arrow-right-long text-lg mr-1"></i> About Us</button>
               </div>
-              <div class="space-y-7 w-full lg:w-10/12">
+              <div class="space-y-6 w-full lg:w-10/12">
                 <h2 class="text-[28px] lg:text-4xl font-extrabold text-headerColor">We design thoughtful, liveable spaces</h2>
                 <p class="font-medium text-descriptionColor">
                   The barn house captivates with its blend of rustic charm and 
                   modern sophistication, featuring weathered wood, sleek metal accents.
                 </p>
               </div>
-              <!-- Card number 01 -->
-              <div class="bg-white rounded-2xl p-6 flex gap-6 shadow-sm lg:items-center text-left">
+              <!-- Card part -->
+             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-1 lg:space-y-6 md:gap-x-6 mb-6">
+               <!-- Card number 01 -->
+               <div class="bg-white rounded-2xl p-6 flex gap-6 shadow-sm lg:items-center text-left">
                 <div>
                   <img src="./assets/commercial.png" alt="">
                 </div>
@@ -142,15 +153,16 @@
                   </div>
                </div>
              </div>
+             </div>
              <!-- Image Part Here -->
-              <div class="flex-1">
-                <img src="./assets/Rectangle.png" alt="">
+              <div class="flex-1 houseBg w-full h-52 bg-no-repeat bg-cover bg-center rounded-2xl md:h-96 md:rounded-2xl lg:h-full lg:bg-center lg:rounded-2xl">
               </div>
+
               <img class="absolute top-12 -left-14 hidden lg:block" src="./assets/Vector.png" alt="">
         </section>
         <!-- Count part Start Here -->
         <section class="container mx-auto pb-24">
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-y-0 gap-y-3 p-14 bg-white rounded-3xl">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:gap-y-0 gap-y-10 p-14 bg-white rounded-3xl shadow-sm">
             <!-- item 01 -->
               <div class="text-center">
                 <div class="mb-3">
@@ -186,6 +198,57 @@
             
           </div>
         </section>
+        <!-- Work part Start Here -->
+         <section class="container mx-auto pb-24">
+          <div class="space-y-4 text-center lg:w-6/12 mx-auto">
+            <div>
+              <button class="bg-white py-2 px-4 rounded-3xl font-bold text-hoverColor shadow-sm"><i class="fa-solid fa-arrow-right-long text-lg mr-1"></i> How we works</button>
+            </div>
+            <div class="space-y-6 w-full">
+              <h2 class="text-[28px] lg:text-4xl font-extrabold text-headerColor">Our Works Process</h2>
+              <p class="font-medium text-descriptionColor">
+                The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
+              </p>
+          </div>
+          </div>
+          <!-- Card part -->
+           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 md:gap-x-6 gap-y-6 mt-10">
+            <!-- card number 01 -->
+            <div class="bg-workCard1 p-6 rounded-2xl space-y-3">
+              <div>
+                <img src="./assets/concept.png" alt="">
+              </div>
+              <h4 class="text-xl font-extrabold text-cardHeaderColor">Concept</h4>
+              <p class="font-medium text-hoverColor">The barn house captivates with its blend of rustic charm and modern.</p>
+            </div>
+            <!-- card number 02 -->
+            <div class="bg-workCard2 p-6 rounded-2xl space-y-3">
+              <div>
+                <img src="./assets/flow-chart.png" alt="">
+              </div>
+              <h4 class="text-xl font-extrabold text-cardHeaderColor">Design Process</h4>
+              <p class="font-medium text-hoverColor">The barn house captivates with its blend of rustic charm and modern.</p>
+            </div>
+            <!-- card number 03 -->
+            <div class="bg-workCard3 p-6 rounded-2xl space-y-3">
+              <div>
+                <img src="./assets/vision.png" alt="">
+              </div>
+              <h4 class="text-xl font-extrabold text-cardHeaderColor">Supervision</h4>
+              <p class="font-medium text-hoverColor">The barn house captivates with its blend of rustic charm and modern.</p>
+            </div>
+            <!-- card number 04 -->
+            <div class="bg-workCard4 p-6 rounded-2xl space-y-3">
+              <div>
+                <img src="./assets/budget-planning.png" alt="">
+              </div>
+              <h4 class="text-xl font-extrabold text-cardHeaderColor">Budget Planning</h4>
+              <p class="font-medium text-hoverColor">The barn house captivates with its blend of rustic charm and modern.</p>
+            </div>
+
+           </div>
+         </section>
+         
 
       </main>
       <!-- Footer Part Start -->

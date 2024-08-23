@@ -1,0 +1,6 @@
+.houseBg{
+    background-image: url(./assets/Rectangle.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
