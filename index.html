@@ -34,6 +34,9 @@
               cardHeaderColor: '#1C1C1C',
               portBtnColor: "rgba(171, 239, 95, 0.2)",
               footerTextColor: "#E9E9E9",
+              borderColor: "rgba(171, 239, 95, 0.5)",
+              
+              deepGreen: "rgba(159, 241, 67, 1)",
             },
             fontFamily: {
                 manrope: ["Manrope", "sans-serif"],
@@ -105,7 +108,7 @@
               <img src="./assets/banner.png" alt="">
             </div>
             <div class="lg:px-36 space-y-6">
-              <h1 class="text-4xl lg:text-6xl font-extrabold text-headerColor">A barn house of this design has a striking appearance</h1>
+              <h1 class="text-3xl lg:text-6xl font-extrabold text-headerColor">A barn house of this design has a striking appearance</h1>
             <p class="font-medium text-descriptionColor leading-normal">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
             <div>
               <button class="text-xl font-extrabold space-x-3 bg-btnPrimary bg-opacity-70 px-5 py-3 rounded-[32px]">Book Consult
@@ -251,6 +254,74 @@
 
            </div>
          </section>
+         <!-- Challenges part Start Here -->
+         <section class="container mx-auto lg:p-10 px-6 lg:px-0">
+          <div class="grid grid-cols-1 lg:grid-cols-2 items-start">
+            <!-- img Part here -->
+             <div class="relative lg:mb-0 mb-10">
+              <div class=" inline-block border-8 border-btnPrimary">
+                <img src="./assets/1.png" alt="">
+              </div>
+              <div class="absolute top-[360px] left-14 border-8 border-btnPrimary lg:block hidden">
+                <img src="./assets/2.png" alt="">
+              </div>
+              <div class="absolute left-44 top-28 border-8 border-btnPrimary lg:block hidden">
+                <img src="./assets/3.jpeg" alt="">
+              </div>
+             </div>
+             <!-- content part here -->
+              <div class="lg:p-8">
+                <h3 class="text-lg font-bold text-deepGreen mb-3 lg:mt-20">About Company</h3>
+                <h2 class="lg:text-4xl text-3xl font-extrabold">25+ YEARS WORKING <span class="text-deepGreen">EXPERIENCE.</span></h2>
+                <p class="font-medium text-gray-500 my-7">There are many variations of passages of Lorem Ipsum available, the majority have suffered alteration in some form, by injected humour. randomised words which don't look even slightly believable. It uses a dictionary of over 200 Latin words, combined with</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <!-- 01 -->
+                  <div class="flex items-center gap-x-2">
+                    <i class="fa-regular fa-circle-check text-2xl text-deepGreen"></i>
+                    <h4 class="text-lg font-bold text-gray-500"> Business Solutions</h4>
+                  </div>
+                  <!-- 02 -->
+                  <div class="flex items-center gap-x-2">
+                    <i class="fa-regular fa-circle-check text-2xl text-deepGreen"></i>
+                    <h4 class="text-lg font-bold text-gray-500"> Creative Conceptions</h4>
+                  </div>
+                  <!-- 03 -->
+                  <div class="flex items-center gap-x-2">
+                    <i class="fa-regular fa-circle-check text-2xl text-deepGreen"></i>
+                    <h4 class="text-lg font-bold text-gray-500"> Corporate Relationship</h4>
+                  </div>
+                  <!-- 04 -->
+                  <div class="flex items-center gap-x-2">
+                    <i class="fa-regular fa-circle-check text-2xl text-deepGreen"></i>
+                    <h4 class="text-lg font-bold text-gray-500"> Mission & Vission</h4>
+                  </div>
+                </div>
+                 <!-- Rinterio Button -->
+                 <div class="lg:inline-block mt-10 pb-32">
+                  <div class="flex gap-x-3 items-center bg-gradient-to-r from-borderColor to-deepGreen  rounded-[32px] py-3 px-5">
+                    <div class="bg-btnPrimary px-2 py-1 rounded-full">
+                      <i class="fa-solid fa-arrow-right-long text-2xl -rotate-45 cursor-pointer"></i>
+                    </div>
+                    <div>
+                      <a href="#" class="text-3xl font-extrabold">Rinterio</a>
+                    </div>
+                  </div>
+                 </div>
+                
+              </div>
+
+          </div>
+         </section>
+
+
+
+
+
+
+
+
+
+
          <!-- Portfolio Part Start Here -->
          <section class="lg:bg-white bg-transparent px-6 lg:px-0">
           <div class="container mx-auto pb-20 lg:py-28">
@@ -314,7 +385,7 @@
         </div>
          </section>
          <!-- News Part Start Here -->
-          <section class="container mx-auto mb-24 px-6 lg:px-0">
+          <section class="container mx-auto mb-24 px-6 lg:px-0 ">
             <!-- News Content part -->
             <div class="space-y-4 text-center md:w-11/12 lg:w-6/12 mx-auto lg:mt-24 mb-8">
               <div>
